@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/black"
+        tools:context=".SecondActivity">
+
+
+        <TextView
+            android:id="@+id/txtMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="主餐:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdgMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/txtMeal"
+        app:layout_constraintTop_toBottomOf="@+id/txtMeal">
+
+        <RadioButton
+            android:id="@+id/rbtnBeef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大麥克$70"
+            android:textColor="#FFFFFFFF"
+            android:tag="70" />
+
+        <RadioButton
+            android:id="@+id/rbtnChicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="麥香雞$50"
+            android:textColor="#FFFFFFFF"
+            android:tag="50" />
+
+        <RadioButton
+            android:id="@+id/rbtnFish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="麥香魚$50"
+            android:textColor="#FFFFFFFF"
+            android:tag="50" />
+
+        <RadioButton
+            android:id="@+id/rbtnSpicyChicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="勁辣雞腿堡$70"
+            android:textColor="#FFFFFFFF"
+            android:tag="70" />
+
+        <RadioButton
+            android:id="@+id/rbtnChickenNuggets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="六塊麥克雞塊$60"
+            android:textColor="#FFFFFFFF"
+            android:tag="60" />
+
+        <RadioButton
+            android:id="@+id/rbtnBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="滿福堡$40"
+            android:textColor="#FFFFFFFF"
+            android:tag="40" />
+
+        <RadioButton
+            android:id="@+id/rbtnMushroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="蕈菇安格斯牛肉堡$120"
+            android:textColor="#FFFFFFFF"
+            android:tag="120" />
+
+
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="飲料:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/rdgDessert"
+            app:layout_constraintTop_toBottomOf="@+id/rdgDessert" />
+
+    <RadioGroup
+        android:id="@+id/rdgDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/txtDrink"
+        app:layout_constraintTop_toBottomOf="@+id/txtDrink">
+
+        <RadioButton
+            android:id="@+id/rbtnCoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可樂$20"
+            android:textColor="#FFFFFFFF"
+            android:tag="20" />
+
+        <RadioButton
+            android:id="@+id/rbtnTea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="檸檬紅茶$20"
+            android:textColor="#FFFFFFFF"
+            android:tag="20" />
+
+        <RadioButton
+            android:id="@+id/rbtnSoup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="玉米濃湯$30"
+            android:textColor="#FFFFFFFF"
+            android:tag="30" />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtDessert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="副餐:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/rdgMeal"
+            app:layout_constraintTop_toTopOf="@+id/txtMeal" />
+
+    <RadioGroup
+        android:id="@+id/rdgDessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/txtDessert"
+        app:layout_constraintTop_toBottomOf="@+id/txtDessert">
+
+        <RadioButton
+            android:id="@+id/rbtnFries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="薯條$30"
+            android:textColor="#FFFFFFFF"
+            android:tag="30" />
+
+        <RadioButton
+            android:id="@+id/rbtnIce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="冰炫風$30"
+            android:textColor="#FFFFFFFF"
+            android:tag="30" />
+
+        <RadioButton
+            android:id="@+id/rbtnPie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="蘋果派$20"
+            android:textColor="#FFFFFFFF"
+            android:tag="20" />
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="加點:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/txtMeal"
+            app:layout_constraintTop_toBottomOf="@+id/rdgDrink" />
+
+        <CheckBox
+            android:id="@+id/chbOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="60"
+            android:text="原味炸雞$60"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/txtAdd"
+            app:layout_constraintTop_toBottomOf="@+id/txtAdd" />
+
+        <CheckBox
+            android:id="@+id/chbSpicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:tag="60"
+            android:text="辣味炸雞$60"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/chbOriginal"
+            app:layout_constraintTop_toTopOf="@+id/chbOriginal" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="確認"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chbSpicy"
+            app:layout_constraintVertical_bias="0.407" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

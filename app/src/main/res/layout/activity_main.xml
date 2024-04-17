@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMcDonald"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="McDonald點餐系統"
+        android:textColor="#FFFFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        tools:ignore="ExtraText" />
+
+    <TextView
+        android:id="@+id/txtMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="主餐:"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMcDonald" />
+
+    <TextView
+        android:id="@+id/txtDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="飲料:"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtMeal"
+        app:layout_constraintTop_toBottomOf="@+id/txtMeal" />
+
+    <TextView
+        android:id="@+id/txtDessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="副餐:"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtDrink"
+        app:layout_constraintTop_toBottomOf="@+id/txtDrink" />
+
+    <TextView
+        android:id="@+id/txtAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="加點:"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtDessert"
+        app:layout_constraintTop_toBottomOf="@+id/txtDessert" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="總金額:"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/txtAdd"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdd" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:text="點餐"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotal" />
+
+    <EditText
+        android:id="@+id/edtMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMeal"
+        app:layout_constraintStart_toEndOf="@+id/txtMeal"
+        app:layout_constraintTop_toTopOf="@+id/txtMeal" />
+
+    <EditText
+        android:id="@+id/edtDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDrink"
+        app:layout_constraintStart_toEndOf="@+id/txtDrink"
+        app:layout_constraintTop_toTopOf="@+id/txtDrink" />
+
+    <EditText
+        android:id="@+id/edtDesert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDessert"
+        app:layout_constraintStart_toEndOf="@+id/txtDessert"
+        app:layout_constraintTop_toTopOf="@+id/txtDessert" />
+
+    <EditText
+        android:id="@+id/edtAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAdd"
+        app:layout_constraintStart_toEndOf="@+id/txtAdd"
+        app:layout_constraintTop_toTopOf="@+id/txtAdd" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTotal"
+        app:layout_constraintStart_toEndOf="@+id/txtTotal"
+        app:layout_constraintTop_toTopOf="@+id/txtTotal" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="407dp"
+        android:layout_height="212dp"
+        android:src="@drawable/mcd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
